@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6fmvIQ265gp9IJnTYKuapt7NvqgBvrFlkb+ilYZk6vk=",
+  "Source": "BookQueryAPI",
+  "BasePath": "_content/BookQueryAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
