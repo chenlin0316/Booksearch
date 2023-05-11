@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\林宥辰\\Desktop\\圖書查詢\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj": {}
+    "C:\\Users\\林宥辰\\Desktop\\圖書資料查詢API\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\林宥辰\\Desktop\\圖書查詢\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj": {
+    "C:\\Users\\林宥辰\\Desktop\\圖書資料查詢API\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\林宥辰\\Desktop\\圖書查詢\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj",
+        "projectUniqueName": "C:\\Users\\林宥辰\\Desktop\\圖書資料查詢API\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj",
         "projectName": "BookQueryAPI",
-        "projectPath": "C:\\Users\\林宥辰\\Desktop\\圖書查詢\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj",
+        "projectPath": "C:\\Users\\林宥辰\\Desktop\\圖書資料查詢API\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj",
         "packagesPath": "C:\\Users\\林宥辰\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\林宥辰\\Desktop\\圖書查詢\\BookQueryAPI\\BookQueryAPI\\obj\\",
+        "outputPath": "C:\\Users\\林宥辰\\Desktop\\圖書資料查詢API\\BookQueryAPI\\BookQueryAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

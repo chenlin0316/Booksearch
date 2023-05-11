@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bVBBwXvFUUtbgJGIK/lotHQ088ZhfmeVfrA+wn5FJOavUeS9QLQgT649q/ddkNl0p3rPRi6DmH1IFFLK9vDzow==",
+  "dgSpecHash": "vt/CwAfhz1oZFqYXw6t968MGEkr98tdftukjNdLQBWlm5V/CExl4fcf1UnGIw7Xlv4lobLz6976yHL/NtHuVwA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\林宥辰\\Desktop\\圖書查詢\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj",
+  "projectFilePath": "C:\\Users\\林宥辰\\Desktop\\圖書資料查詢API\\BookQueryAPI\\BookQueryAPI\\BookQueryAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\林宥辰\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\林宥辰\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

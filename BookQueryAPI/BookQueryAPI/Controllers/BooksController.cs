@@ -84,46 +84,28 @@ namespace BookQueryAPI.Controllers
                 var cacheBookList = Encoding.UTF8.GetString(bookListBytes);
                 var bookFromcahe = JsonConvert.DeserializeObject<List<BookDTOClass>>(cacheBookList);
 
-                if (id != null)
+              
+                bookFromcahe = bookFromcahe.Where(a =>
+                (id == null || a.ID == id) &&
+                (string.IsNullOrEmpty(書名) || a.書名 == 書名) &&
+                (string.IsNullOrEmpty(作者) || a.作者 == 作者) &&
+                (!開始日期.HasValue || a.出版日期 >= 開始日期) &&
+                (!結束日期.HasValue || a.出版日期 <= 結束日期)).ToList();
+                        
+                if (bookFromcahe.Any())
                 {
-                    bookFromcahe = bookFromcahe.Where(a => a.ID == id).ToList();
+                    return Ok(bookFromcahe);
                 }
-                if (!string.IsNullOrEmpty(書名))
-                {
-                    bookFromcahe = bookFromcahe.Where(a => a.書名 == 書名).ToList();
-                }
-                if (!string.IsNullOrEmpty(作者))
-                {
-                    bookFromcahe = bookFromcahe.Where(a => a.作者 == 作者).ToList();
-                }
-                if (開始日期.HasValue)
-                {
-                    bookFromcahe = bookFromcahe.Where(a => a.出版日期 >= 開始日期).ToList();
-                }
-                if (結束日期.HasValue)
-                {
-                    bookFromcahe = bookFromcahe.Where(a => a.出版日期 <= 結束日期).ToList();
-                }
-                return Ok(bookFromcahe);
             }
 
             var booksQuery = _context.Book.AsQueryable();
-            if (id != null) {
-                booksQuery = booksQuery.Where(a => a.ID == id);
-            }
-            if (!string.IsNullOrEmpty(書名)) {
-                booksQuery = booksQuery.Where(a => a.書名 == 書名);
-            }
-            if (!string.IsNullOrEmpty(作者)) {
-                booksQuery = booksQuery.Where(a => a.作者 == 作者);
-            }
-            if (開始日期.HasValue) {
-                booksQuery = booksQuery.Where(a => a.出版日期 >= 開始日期);
-            }
-            if (結束日期.HasValue)
-            {
-                booksQuery = booksQuery.Where(a => a.出版日期 <= 結束日期);
-            }
+
+            booksQuery = booksQuery.Where(a =>
+            (id == null || a.ID == id) &&
+            (string.IsNullOrEmpty(書名) || a.書名 == 書名) &&
+            (string.IsNullOrEmpty(作者) || a.作者 == 作者) &&
+            (!開始日期.HasValue || a.出版日期 >= 開始日期) &&
+            (!結束日期.HasValue || a.出版日期 <= 結束日期));
 
             var book = await booksQuery.ToListAsync();
 
